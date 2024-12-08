@@ -1,0 +1,103 @@
+/* 全局样式 */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* 导航栏样式 */
+nav {
+  background-color: #333;
+  padding: 1em;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 15px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #f4f4f4;
+}
+
+/* 容器样式 */
+.container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 页脚样式 */
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #333;
+  color: #fff;
+  margin-top: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* 标题样式 */
+h1, h2, h3 {
+  color: #333;
+}
+
+/* 按钮样式 */
+button, .btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #1f2937; /* 按钮背景色 */
+  color: #fff; /* 按钮文本色 */
+  text-decoration: none; /* 移除下划线 */
+  font-weight: bold; /* 粗体文本 */
+  border-radius: 0.375rem; /* 圆角 */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* 动画效果 */
+}
+
+button:hover, .btn:hover {
+  background-color: #0056b3;
+  box-shadow: 0 4px 14px rgba(31, 41, 55, 0.25); /* 增加阴影使按钮显眼 */
+}
+
+/* 表单元素样式 */
+input[type="text"], input[type="password"], input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+label {
+  font-weight: bold;
+}
+
+/* 警告信息样式 */
+.alert {
+  padding: 15px;
+  background-color: #f44336;
+  color: white;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+/* 其他链接样式 */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+} 
