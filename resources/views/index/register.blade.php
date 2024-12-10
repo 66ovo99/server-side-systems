@@ -52,7 +52,7 @@
             </div>
             <div class="mb-4">
                 <label for="password" class="block mb-2">password：</label>
-                <input type="password" id="password" name="password" class="w-full p-2 border border-gray-300 rounded" placeholder="please enter someone's email" required>
+                <input type="password" id="password" name="password" class="w-full p-2 border border-gray-300 rounded" placeholder="password > or = 6 digits" required>
             </div>
             <div class="mb-4">
                 <label for="password_confirmation" class="block mb-2">Confirm Password:</label>

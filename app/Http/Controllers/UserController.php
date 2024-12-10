@@ -45,7 +45,7 @@ class UserController extends Controller
     /**
      * 更新用户名
      */
-    public function updateUserName(Request $request)
+    public function infoUpdate(Request $request)
     {
         // 验证用户名
         $request->validate([

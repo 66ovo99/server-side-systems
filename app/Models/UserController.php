@@ -16,18 +16,18 @@ class UserController extends Controller
         return view('user.edit-username', compact('user')); // 返回到编辑用户名的视图
     }
 
-    public function updateUserName(Request $request)
-    {
-        $request->validate([
-            'username' => 'required|string|max:255',
-        ]);
+    // public function updateUserName(Request $request)
+    // {
+    //     $request->validate([
+    //         'username' => 'required|string|max:255',
+    //     ]);
 
-        $user = Auth::user();
-        $user->username = $request->username;
-        $user->save();
+    //     $user = Auth::user();
+    //     $user->username = $request->username;
+    //     $user->save();
 
-        return redirect()->route('user.personal')->with('success', 'Username updated successfully!');
-    }
+    //     return redirect()->route('user.personal')->with('success', 'Username updated successfully!');
+    // }
 
 
     public function avatarPage()
@@ -70,7 +70,7 @@ class UserController extends Controller
         $user->username = $request->input('username');
         $user->save();
 
-        return redirect()->route('personal')->with('success', 'User information updated successfully!');
+        return redirect()->route('personal')->with('success', 'Username updated successfully!');
     }
 
 }

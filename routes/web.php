@@ -17,7 +17,7 @@ Route::get('/personal', [App\Http\Controllers\UserController::class, 'showPerson
 // 用户名相关
 Route::get('/user/username', [\App\Http\Controllers\UserController::class, 'editUsername'])->name('user.username.edit');
 Route::get('/user/edit', [App\Http\Controllers\UserController::class, 'editUserName'])->name('user.name.edit');
-Route::put('/user/update', [App\Http\Controllers\UserController::class, 'updateUserName'])->name('user.name.update');
+// Route::put('/user/update', [App\Http\Controllers\UserController::class, 'updateUserName'])->name('user.name.update');
 Route::put('/user', [\App\Http\Controllers\UserController::class, 'infoUpdate'])->name('user.info.update');
 
 // 头像相关

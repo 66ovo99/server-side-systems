@@ -20,7 +20,7 @@ class RegisterController extends Controller
 
         // 创建新用户
         $user = User::create([
-            'username' => $request->name,
+            'username' => $request->username,
             'email' => $request->email,
             'password' => Hash::make($request->password),
         ]);
